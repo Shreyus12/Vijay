@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Vijay</title>
+
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/sidebar.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel='shortcut icon' type='image/x-icon' href='https://mir-s3-cdn-cf.behance.net/projects/404/75fa25114745609.Y3JvcCwyMTUyLDE2ODQsNDIxLDA.jpg' />
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jPushMenu.js"></script>
+	<script src="js/counter.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="https://kit.fontawesome.com/149a09198c.js" crossorigin="anonymous"></script>
+
+
+
+	<script type="text/javascript">
+		$(window).load(function () {
+			$(".loader").fadeOut("slow");
+		})
+	</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+	<div class="loader"></div>
+
+	<style>
+		.loader {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			background: url('images/page-loader.gif') 50% 50% no-repeat rgb(249, 249, 249);
+		}
+	</style>
+
+	<header>
+
+
+
+		<div class="hero">
+			<div class="content">
+				<div class="left">
+					<p>Click To Play</p>
+					<img src="images/play.png" id="icon1">
+				</div>
+				<div class="right">
+					<p>Click To Play</p>
+					<img src="images/play.png" id="icon2">
+				</div>
+
+			</div>
+		</div>
+
+		<audio id="mysong">
+			<source src="images/correct song.mpeg" type="audio/mp3">
+		</audio>
+		<audio id="mysong">
+			<source src="images/correct song.mpeg" type="audio/mp3">
+		</audio>
+
+		<script>
+
+			var mysong = document.getElementById("mysong");
+			var icon = document.getElementById("icon1");
+
+			icon1.onclick = function () {
+				if (mysong.paused) {
+					mysong.play();
+					icon1.src = "images/pause.png";
+				} else {
+					mysong.pause();
+					icon1.src = "images/play.png";
+				}
+			}
+
+			var mysong = document.getElementById("mysong");
+			var icon = document.getElementById("icon2");
+
+			icon2.onclick = function () {
+				if (mysong.paused) {
+					mysong.play();
+					icon2.src = "images/pause.png";
+				} else {
+					mysong.pause();
+					icon2.src = "images/play.png";
+				}
+			}
+
+		</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Explanation in JS tab -->
+
+		<!-- The two texts -->
+
+		<div id="container">
+			<span id="text1"></span>
+			<span id="text2"></span>
+		</div>
+
+
+
+		<!-- The SVG filter used to create the merging effect -->
+		<svg id="filters">
+			<!-- <defs>
+				<filter id="threshold">
+
+					<feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140" />
+				</filter>
+			</defs> -->
+		</svg>
+
+
+		<!-- <svg xmlns="http://www.w3.org/2000/svg">
+			<filter id="filter">
+				<feColorMatrix type="matrix" values=" 1.000  0.000  0.000  0.000  0.000 
+						 0.000  1.000  0.000  0.000  0.000 
+						 0.000  0.000  1.000  0.000  0.000 
+						 0.000  0.000  0.000  1.000  0.000">
+				</feColorMatrix>
+			</filter>
+		</svg> -->
+
+
+
+
+
+		<div class="move">
+			<div class="slider">
+				<div class="box1">
+				</div>
+				<div class="box2">
+				</div>
+				<div class="box3">
+				</div>
+				<div class="box4">
+				</div>
+				<div class="box5">
+				</div>
+				<div class="box6">
+				</div>
+				<div class="box7">
+				</div>
+			</div>
+		</div>
+		<div id="test"></div>
+
+
+
+		<div class="services">
+			<div class="container">
+				<h2>Vijay, is an <span id="rotate"></span> who works predominantly in Tamil cinema.</h2>
+				<h3>Referred to by fans and media as <b class="thalapathy">"Thalapathy"</b> (commander), Vijay is the
+					highest paid actor in Tamil
+					cinema. He has significant fan following globally. He has won numerous awards, including eight Vijay
+					Awards by Star India, three Tamil Nadu State Film Awards by Government of Tamil Nadu, and a SIIMA
+					Award.
+					He has been included several times in the Forbes India Celebrity 100 list, based on the earnings of
+					Indian celebrities.</h3>
+
+				<div class="overview">
+
+					<div class="col-md-4 col-sm-4">
+						<div class="feature-box">
+							<img src="images/parents.jpg" class="img-responsive">
+						</div>
+
+						<div class="feature-body">
+							<h4>Parents</h4>
+							<p>His father S. A. Chandrasekhar is a film director and his mother Shoba Chandrasekhar is a
+								playback singer and carnatic vocalist.</p>
+						</div>
+
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<div class="feature-box">
+							<img src="images/wife.jpg" class="img-responsive">
+						</div>
+
+						<div class="feature-body">
+							<h4>Spouse</h4>
+							<p>Sangeetha Sornalingam, now the wife of Vijay is the daughter of a prominent Tamil
+								industrialist from Sri Lanka, who is settled in the UK.</p>
+						</div>
+
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<div class="feature-box">
+							<img src="images/kids.jpg" class="img-responsive">
+						</div>
+
+						<div class="feature-body">
+							<h4>Children</h4>
+							<p>Two children (a son and a daughter). His son's name is Jason Sanjay, and he was born in
+								London in the year 2000, and his daughter's name is Divya Shasha, and she was born in
+								Chennai</p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="information">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-3 col-sm-3 counter-item">
+						<h3 class="counter-number" data-from="1" data-to="26" data-speed="10000"></h3>
+						<span class="counter-text">AWARDS</span>
+					</div>
+					<div class="col-md-3 col-sm-3 counter-item">
+						<h3 class="counter-numbe" data-from="1" data-to="500" data-speed="2000"></h3>
+						<span class="counter-tex"></span>
+					</div>
+					<div class="col-md-3 col-sm-3 counter-item">
+						<h3 class="counter-numbe" data-from="1" data-to="7500" data-speed="3000"></h3>
+						<span class="counter-tex"></span>
+					</div>
+					<div class="col-md-3 col-sm-3 counter-item">
+						<h3 class="counter-number" data-from="1" data-to="66" data-speed="16000"></h3>
+						<span class="counter-text">MOVIES</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="projects">
+			<div class="containermv">
+
+				<h3>Movies</h3>
+
+
+				<div class="news">
+
+					<div class="date">
+						<h4>1984</h4>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-md-offset-1 section-left">
+							<div class="article">
+								<div class="wrap">
+
+									<div class="heading">
+										<h5><i class="fa-solid fa-film"></i> Vetri</h5>
+										<p>Indian Tamil-language action crime film directed by S. A. Chandrasekhar.
+											Vijayakanth plays the lead role.</p>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-md-offset-6 section-right">
+							<div class="article">
+								<div class="wrap">
+
+									<div class="heading">
+										<h5><i class="fa-solid fa-film"></i> Kudumbam</h5>
+										<p>Indian Tamil-language drama film, directed by S. A. Chandrasekhar. The film
+											stars Vijayakanth, Devisri, Jaishankar and Sujatha.</p>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="date">
+						<h4>1985</h4>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-md-offset-1 section-left">
+							<div class="article">
+								<div class="wrap">
+
+									<div class="heading">
+										<h5><i class="fa-solid fa-film"></i> Naan Sigappu Manithan</h5>
+										<p>Indian Tamil-language action thriller film written and directed by S. A.
+											Chandrasekhar. The film stars Rajinikanth, K. Bhagyaraj and Ambika</p>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="date">
+						<h4>1986</h4>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-md-offset-6 section-right">
+							<div class="article">
+								<div class="wrap">
+
+									<div class="heading">
+										<h5><i class="fa-solid fa-film"></i> Vasantha Raagam</h5>
+										<p>Indian Tamil-language romantic drama film, directed by S. A. Chandrasekhar
+											and
+											produced by his wife Shoba who wrote the story. The film stars Vijayakanth,
+											Rahman and Sudha Chandran.</p>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="date">
+						<h4>1987</h4>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-md-offset-1 section-left">
+							<div class="article">
+								<div class="wrap">
+
+									<div class="heading">
+										<h5><i class="fa-solid fa-film"></i> Sattam Oru Vilaiyattu</h5>
+										<p>Indian Tamil-language vigilante action film, directed by S. A. Chandrasekhar
+											and
+											produced by Shoba Chandrasekhar. The film stars Vijayakanth, Radha and
+											Ravichandran.</p>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="date">
+						<h4>1986</h4>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-md-offset-6 section-right">
+							<div class="article">
+								<div class="wrap">
+
+									<div class="heading">
+										<h5><i class="fa-solid fa-film"></i> Vasantha Raagam</h5>
+										<p>Indian Tamil-language romantic drama film, directed by S. A. Chandrasekhar
+											and
+											produced by his wife Shoba who wrote the story. The film stars Vijayakanth,
+											Rahman and Sudha Chandran.</p>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="date">
+						<h4>1992</h4>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-md-offset-1 section-left">
+							<div class="article">
+								<div class="wrap">
+
+									<div class="heading">
+										<h5><i class="fa-solid fa-film"></i> Ithu Engal Neethi</h5>
+										<p>Indian Tamil-language vigilante action film, directed by S. A. Chandrasekhar
+											and
+											produced by S. S. Neelakandan and Shoba Chandrasekhar. The film stars Ramki,
+											Raadhika, Nizhalgal Ravi and Vani Viswanath.</p>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="date">
+						<h4>1993</h4>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-md-offset-6 section-right">
+							<div class="article">
+								<div class="wrap">
+
+									<div class="heading">
+										<h5><i class="fa-solid fa-film"></i> Sendhoorapandi</h5>
+										<p>Indian Tamil-language romantic action film directed by S. A. Chandrasekhar.
+											The
+											film stars Vijayakanth, Vijay, Gautami and Yuvarani.</p>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="date">
+						<h4>1994</h4>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-md-offset-1 section-left">
+							<div class="article">
+								<div class="wrap">
+
+									<div class="heading">
+										<h5><i class="fa-solid fa-film"></i> Rasigan</h5>
+										<p>Indian Tamil-language romantic action film written and directed by S. A.
+											Chandrasekhar. The film stars his son Vijay and Sanghavi.</p>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<span id="dots">...</span>
+					<span id="more">
+
+
+
+
+						<div class="date">
+							<h4>2019</h4>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-5 col-md-6 col-md-offset-6 section-right">
+								<div class="article">
+									<div class="wrap">
+
+										<div class="heading">
+											<h5><i class="fa-solid fa-film"></i> Bigil</h5>
+											<p>Indian Tamil-language sports action film written and directed by Atlee
+												and
+												produced by Kalpathi S. Aghoram under the banner AGS Entertainment. The
+												film
+												stars Vijay in the titular role.</p>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="date">
+							<h4>2021</h4>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-5 col-md-6 col-md-offset-1 section-left">
+								<div class="article">
+									<div class="wrap">
+
+										<div class="heading">
+											<h5><i class="fa-solid fa-film"></i> Master</h5>
+											<p> Indian Tamil-language action thriller film written and directed by
+												Lokesh
+												Kanagaraj. Produced by Xavier Britto, under his maiden production house
+												XB
+												Film
+												Creators, the film stars Vijay and Vijay Sethupathi in the lead roles
+											</p>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="date">
+							<h4>2022</h4>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-5 col-md-6 col-md-offset-6 section-right">
+								<div class="article">
+									<div class="wrap">
+
+										<div class="heading">
+											<h5><i class="fa-solid fa-film"></i> Beast</h5>
+											<p>Indian Tamil-language action film[6] written and directed by Nelson. The
+												film
+												stars Vijay, Pooja Hegde and Selvaraghavan.</p>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="date">
+							<h4>2023</h4>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-5 col-md-6 col-md-offset-1 section-left">
+								<div class="article">
+									<div class="wrap">
+
+										<div class="heading">
+											<h5><i class="fa-solid fa-film"></i> Varisu</h5>
+											<p>Indian Tamil-language action drama film directed by Vamshi Paidipally who
+												co-wrote it with Hari and Ashishor Solomon. Produced jointly by Dil Raju
+												and
+												Sirish under Sri Venkateswara Creations and PVP Cinema, the film stars
+												Vijay
+												and
+												Rashmika Mandanna.</p>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</span>
+					<button onclick="myFunction()" id="myBtn">Read more</button>
+
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="clients">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="carousel slide clients-carousel" id="clients-slider">
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-md-3 col-sm-3 col-xs-6">
+											<a class="thumbnail" href="#">
+												<img src="/images/col1.jpg" alt="" />
+											</a>
+										</div>
+										<div class="col-md-3 col-sm-3 col-xs-6">
+											<a class="thumbnail" href="#">
+												<img src="/images/col2.jpg" alt="" />
+											</a>
+										</div>
+										<div class="col-md-3 col-sm-3 col-xs-6">
+											<a class="thumbnail" href="#">
+												<img src="/images/col3.jpg" alt="" />
+											</a>
+										</div>
+										<div class="col-md-3 col-sm-3 col-xs-6">
+											<a class="thumbnail" href="#">
+												<img src="/images/col4.jpg" alt="" />
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row">
+										<div class="col-md-3 col-sm-3 col-xs-6">
+											<a class="thumbnail" href="#">
+												<img src="/images/col5.jpeg" alt="" />
+											</a>
+										</div>
+										<div class="col-md-3 col-sm-3 col-xs-6">
+											<a class="thumbnail" href="#">
+												<img src="/images/col6.jpeg" alt="" />
+											</a>
+										</div>
+										<div class="col-md-3 col-sm-3 col-xs-6">
+											<a class="thumbnail" href="#">
+												<img src="/images/col7.jpeg" alt="" />
+											</a>
+										</div>
+										<div class="col-md-3 col-sm-3 col-xs-6">
+											<a class="thumbnail" href="#">
+												<img src="/images/col8.jpg" alt="" />
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+		<div class="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="col-lg-12">
+							<h6 class="description">LATEST MOVIES</h6>
+							<div class="row pt-md">
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 profile">
+									<div class="img-box">
+										<img src="images/theri.jpg" class="img-responsive">
+										<ul class="text-center">
+											<a href="https://youtu.be/ZK4uGLpkAKk">
+												<li><i class="fa-brands fa-youtube"></i></li>
+											</a>
+
+										</ul>
+									</div>
+									<h1>Vijay Kumar</h1>
+									<h2>Theri</h2>
+
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 profile">
+									<div class="img-box">
+										<img src="images/bigil.jpg" class="img-responsive">
+										<ul class="text-center">
+											<a href="https://youtu.be/GR-Ui8-V2M0">
+												<li><i class="fa-brands fa-youtube"></i></li>
+											</a>
+
+										</ul>
+									</div>
+									<h1>Michael, Rayappan</h1>
+									<h2>Bigil</h2>
+
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 profile">
+									<div class="img-box">
+										<img src="images/mersal.jpg" class="img-responsive">
+										<ul class="text-center">
+											<a href="https://youtu.be/gQDo5QuZTaw">
+												<li><i class="fa-brands fa-youtube"></i></li>
+											</a>
+
+										</ul>
+									</div>
+									<h1>Vetri, Maaran</h1>
+									<h2>Mersal</h2>
+
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 profile">
+									<div class="img-box">
+										<img src="images/master.jpg" class="img-responsive">
+										<ul class="text-center">
+											<a href="https://youtu.be/1_iUFT3nWHk">
+												<li><i class="fa-brands fa-youtube"></i></li>
+											</a>
+
+										</ul>
+									</div>
+									<h1>John Durairaj</h1>
+									<h2>Master</h2>
+
+								</div>
+
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 profile">
+									<div class="img-box">
+										<img src="images/beast.jpg" class="img-responsive">
+										<ul class="text-center">
+											<a href="https://youtu.be/0E1kVRRi6lk">
+												<li><i class="fa-brands fa-youtube"></i></li>
+											</a>
+
+										</ul>
+									</div>
+									<h1>Veera Raghavan</h1>
+									<h2>Beast</h2>
+	
+								</div>
+
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 profile">
+									<div class="img-box">
+										<img src="images/varisu.jpg" class="img-responsive">
+										<ul class="text-center">
+											<a href="https://youtu.be/9fux9swQ5AQ">
+												<li><i class="fa-brands fa-youtube"></i></li>
+											</a>
+
+										</ul>
+									</div>
+									<h1>Vijay Rajendran</h1>
+									<h2>Varisu</h2>
+		
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<section>
+			<button class="show-modal">What's Next</button>
+			<span class="overlay"></span>
+			<div class="modal-box">
+
+
+	
+			</div>
+		</section>
+
+
+		<script>
+
+			const section = document.querySelector("section"),
+				overlay = document.querySelector(".overlay"),
+				showBtn = document.querySelector(".show-modal"),
+				closeBtn = document.querySelector(".close-btn");
+
+			showBtn.addEventListener("click", () => {
+				section.classList.add("active");
+			});
+
+			closeBtn.addEventListener("click", () => {
+				section.classList.remove("active");
+			});
+			overlay.addEventListener("click", () => {
+				section.classList.remove("active");
+			});
+
+
+
+
+
+		</script>
+
+
+
+
+
+
+
+
+
+
+
+
+		<script type="text/javascript">
+
+			$(document).ready(function () {
+				$('.toggle-menu').jPushMenu({ closeOnClickLink: false });
+				$('.dropdown-toggle').dropdown();
+			});
+
+		</script>
+
+		<script type="text/javascript">
+
+			var terms = ["Indian actor", "dancer ", "singer"];
+
+			function rotateTerm() {
+				var ct = $("#rotate").data("term") || 0;
+				$("#rotate").data("term", ct == terms.length - 1 ? 0 : ct + 1).text(terms[ct]).fadeIn()
+					.delay(1000).fadeOut(200, rotateTerm);
+			}
+			$(rotateTerm);
+
+		</script>
+
+
+		<script type="text/javascript">
+
+			jQuery('.counter-item').appear(function () {
+				jQuery('.counter-number').countTo();
+				jQuery(this).addClass('funcionando');
+				console.log('funcionando');
+			});
+
+		</script>
+
+		<script type="text/javascript">
+
+			$(document).ready(function () {
+				$("#clients-slider").carousel({
+					interval: 2000 //TIME IN MILLI SECONDS
+				});
+			});
+
+		</script>
+
+
+		<script type="text/javascript">
+
+			$(function () {
+				$.scrollUp({
+					scrollName: 'scrollUp', // Element ID
+					topDistance: '300', // Distance from top before showing element (px)
+					topSpeed: 600, // Speed back to top (ms)
+					animation: 'fade', // Fade, slide, none
+					animationInSpeed: 200, // Animation in speed (ms)
+					animationOutSpeed: 200, // Animation out speed (ms)
+					activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+					scrollImg: true,
+				});
+			});
+
+
+
+
+
+
+
+
+
+		</script>
+
+
+		<script>
+
+			function rotate() {
+				var lastChild = $('.slider div:last-child').clone();
+				/*$('#test').html(lastChild)*/
+				$('.slider div').removeClass('firstSlide')
+				$('.slider div:last-child').remove();
+				$('.slider').prepend(lastChild)
+				$(lastChild).addClass('firstSlide')
+			}
+
+			window.setInterval(function () {
+				rotate()
+			}, 1500);
+
+
+
+			/*
+				This pen cleverly utilizes SVG filters to create a "Morphing Text" effect. Essentially, it layers 2 text elements on top of each other, and blurs them depending on which text element should be more visible. Once the blurring is applied, both texts are fed through a threshold filter together, which produces the "gooey" effect. Check the CSS - Comment the #container rule's filter out to see how the blurring works!
+			*/
+
+			const elts = {
+				text1: document.getElementById("text1"),
+				text2: document.getElementById("text2")
+			};
+
+			// The strings to morph between. You can change these to anything you want!
+			const texts = ["Thalapathy", "Vijay"];
+
+
+
+
+
+
+
+
+
+
+
+
+			// Controls the speed of morphing.
+			const morphTime = 0.75;
+			const cooldownTime = 0.25;
+
+			let textIndex = texts.length - 1;
+			let time = new Date();
+			let morph = 0;
+			let cooldown = cooldownTime;
+
+			elts.text1.textContent = texts[textIndex % texts.length];
+			elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+
+			function doMorph() {
+				morph -= cooldown;
+				cooldown = 0;
+
+				let fraction = morph / morphTime;
+
+				if (fraction > 1) {
+					cooldown = cooldownTime;
+					fraction = 1;
+				}
+
+				setMorph(fraction);
+			}
+
+			// A lot of the magic happens here, this is what applies the blur filter to the text.
+			function setMorph(fraction) {
+				// fraction = Math.cos(fraction * Math.PI) / -2 + .5;
+
+				elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+				elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+				fraction = 1 - fraction;
+				elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+				elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+				elts.text1.textContent = texts[textIndex % texts.length];
+				elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+			}
+
+			function doCooldown() {
+				morph = 0;
+
+				elts.text2.style.filter = "";
+				elts.text2.style.opacity = "100%";
+
+				elts.text1.style.filter = "";
+				elts.text1.style.opacity = "0%";
+			}
+
+			// Animation loop, which is called every frame.
+			function animate() {
+				requestAnimationFrame(animate);
+
+				let newTime = new Date();
+				let shouldIncrementIndex = cooldown > 0;
+				let dt = (newTime - time) / 1000;
+				time = newTime;
+
+				cooldown -= dt;
+
+				if (cooldown <= 0) {
+					if (shouldIncrementIndex) {
+						textIndex++;
+					}
+
+					doMorph();
+				} else {
+					doCooldown();
+				}
+			}
+
+			// Start the animation.
+			animate();
+
+
+
+
+
+
+
+
+
+		</script>
+
+
+		<script>
+			function myFunction() {
+				var dots = document.getElementById("dots");
+				var moreText = document.getElementById("more");
+				var btnText = document.getElementById("myBtn");
+
+				if (dots.style.display === "none") {
+					dots.style.display = "inline";
+					btnText.innerHTML = "View more";
+					moreText.style.display = "none";
+				} else {
+					dots.style.display = "none";
+					btnText.innerHTML = "View less";
+					moreText.style.display = "inline";
+				}
+			}
+
+		</script>
+
+
+
+
+</body>
+
+</html>
